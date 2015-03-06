@@ -40,3 +40,7 @@ Mobile shell, replacement for SSH.
 ### Zsh
 
  - `zsh::default` @Setup
+
+### Set App
+
+ - `opsworks_app_server::opsrp_setapp` @Setup (for Passenger/Rails) - `bin/rake` tasks and `bin/rails console` with ease by downloading [this script](https://gist.github.com/Neson/9ec46f825eebadf06615) and alias it as `sa`.
