@@ -8,7 +8,7 @@ Recipes
 
 ### NewRelic
 
-- `newrelic::default` @Setup - installs the New Relic agent that performs the server monitoring
+ - `newrelic::default` @Setup - installs the New Relic agent that performs the server monitoring
 
 #### Attributes
 
@@ -26,3 +26,9 @@ Recipes
     <td><tt>undefined</tt></td>
   </tr>
 </table>
+
+### Mosh
+
+Mobile shell, replacement for SSH.
+
+ - `mosh::default` @Setup
