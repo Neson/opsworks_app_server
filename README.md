@@ -44,3 +44,52 @@ Mobile shell, replacement for SSH.
 ### Set App
 
  - `opsworks_app_server::opsrp_setapp` @Setup (for Passenger/Rails) - `bin/rake` tasks and `bin/rails console` with ease by downloading [this script](https://gist.github.com/Neson/9ec46f825eebadf06615) and alias it as `sa`.
+
+### Webhooks
+
+ - `opsworks_app_server::webhooks_setup` @Setup
+ - `opsworks_app_server::webhooks_configure` @Configure
+ - `opsworks_app_server::webhooks_deploy` @Deploy
+ - `opsworks_app_server::webhooks_undeploy` @Undeploy
+ - `opsworks_app_server::webhooks_shutdown` @Shutdown
+
+#### Attributes
+
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td><tt>['webhooks_setup_url']</tt></td>
+    <td>Array</td>
+    <td>list of URLs to POST to</td>
+    <td><tt>[]</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['webhooks_configure_url']</tt></td>
+    <td>Array</td>
+    <td>list of URLs to POST to</td>
+    <td><tt>[]</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['webhooks_deploy_url']</tt></td>
+    <td>Array</td>
+    <td>list of URLs to POST to</td>
+    <td><tt>[]</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['webhooks_undeploy_url']</tt></td>
+    <td>Array</td>
+    <td>list of URLs to POST to</td>
+    <td><tt>[]</tt></td>
+  </tr>
+  <tr>
+    <td><tt>['webhooks_shutdown_url']</tt></td>
+    <td>Array</td>
+    <td>list of URLs to POST to</td>
+    <td><tt>[]</tt></td>
+  </tr>
+</table>
