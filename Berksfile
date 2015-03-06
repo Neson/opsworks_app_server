@@ -4,3 +4,4 @@ metadata
 
 cookbook 'newrelic'
 cookbook 'mosh'
+cookbook 'zsh'

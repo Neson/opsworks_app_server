@@ -6,6 +6,10 @@ A collection of useful recipes for app servers on OpsWorks.
 Recipes
 -------
 
+### Locale
+
+- `opsworks_app_server::locale_gen_zhtw` @Setup - locale-gen zh_TW.UTF-8
+
 ### NewRelic
 
  - `newrelic::default` @Setup - installs the New Relic agent that performs the server monitoring
@@ -32,3 +36,7 @@ Recipes
 Mobile shell, replacement for SSH.
 
  - `mosh::default` @Setup
+
+### Zsh
+
+ - `zsh::default` @Setup
