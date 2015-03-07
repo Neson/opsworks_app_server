@@ -6,12 +6,16 @@ node[:deploy].each do |application, deploy|
   data[:event] = 'Deploy'
   data[:application] = application
   data[:deploy] = deploy
-  data_json = data.to_json.gsub("'", '')
+  data_json = data.to_json
 
   node['webhooks_deploy_url'].each do |url|
 
-    execute 'POST' do
-      command "curl -X POST -H 'Content-Type: application/json' -d '#{data_json}' '#{url}'"
+    http_request "post data to specified URL" do
+      action :post
+      url url
+      message data_json
+      headers("Content-Type" => "application/json")
     end
+
   end if node['webhooks_deploy_url'].is_a?(Array)
 end
